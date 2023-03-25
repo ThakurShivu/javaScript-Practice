@@ -9,3 +9,4 @@ console.log("This is the code")
 method.greeeting("Shivani")
 
 method.greeeting("Shiv")
+console.log("This is shivani Singh")
