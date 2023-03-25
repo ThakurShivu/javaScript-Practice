@@ -7,3 +7,5 @@ console.log("written in another branch")
 console.log("This is the code")
 
 method.greeeting("Shivani")
+
+method.greeeting("Shiv")
