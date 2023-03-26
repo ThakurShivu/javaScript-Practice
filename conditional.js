@@ -1,4 +1,4 @@
-const TODAY='Sunday'
+const TODAY='Wednesday'
 const SUNDAY_MENU='Aalu ka paratha'
 const MONDAY_MENU='Coffee'
 const TUESDAY_MENU='Frenchfries'
@@ -62,11 +62,27 @@ if (TODAY==MONDAY||TODAY==WEDNESDAY||TODAY==FRIDAY){
     console.log("Today is off")
 }
 
+//SWITCH CASE : Write a program to print meal menu according to a day
 
-
-
-
-
-
-
-
+switch(TODAY){
+    case MONDAY:
+        console.log("today's menu : ",MONDAY_MENU)
+        break
+    case TUESDAY:
+        console.log("today's menu : ",TUESDAY_MENU)
+        break
+    case WEDNESDAY:
+        console.log("today's menu : ",WEDNESDAY_MENU)
+        break
+    case THURSDAY:
+        console.log("today's menu : ",THURSDAY_MENU)
+        break
+    case FRIDAY:
+        console.log("today's menu : ",FRIDAY_MENU)
+        break
+    case SATURDAY:
+        console.log("today's menu : ",SATURDAY_MENU)
+        break
+    default:
+        console.log("today's menu : ",SUNDAY_MENU)                    
+}
