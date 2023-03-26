@@ -10,7 +10,7 @@ const SATURDAY_MENU='Rajma'
 const SUNDAY = "Sunday"
 const MONDAY = "Monday"
 const TUESDAY = "Tuesday"
-const WEDNESDA = "Wednesday"
+const WEDNESDAY = "Wednesday"
 const THURSDAY = "Thursday"
 const FRIDAY = "Friday"
 const SATURDAY = "Saturday" 
@@ -37,3 +37,36 @@ if (TODAY == SUNDAY){
     console.log("Today is : "+TODAY)
     console.log("Today's menu is : "+ SATURDAY_MENU)
 }
+
+// find greatest among three value 
+
+let num1=78
+let num2=12
+let num3=24
+ 
+if(num1>=num2 && num1>=num3){
+    console.log("result is: "+num1+ ' is greater than num2 and num3')
+}else if(num2>=num3 && num2>=num3){
+    console.log("result is: "+num2 +' is greater than num3 and num1')
+}else{
+    console.log("result is: "+num3+ ' is greater than num1 and num2')
+}
+
+// find out Todays office pattern => mon,wed,friday=>WFO , tue,thu=>WFH , sat, sun => hurrah! todays is holiday
+
+if (TODAY==MONDAY||TODAY==WEDNESDAY||TODAY==FRIDAY){
+    console.log("Today is Work from office")
+}else if(TODAY==TUESDAY||TODAY==THURSDAY){
+    console.log("Today is work from home")
+}else{
+    console.log("Today is off")
+}
+
+
+
+
+
+
+
+
+
