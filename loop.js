@@ -1,5 +1,6 @@
-const num1 =3
-for(num1=3;num1<=10;num1++)
+let num1=3;
+for(let i=1; i<=10; i++)
 {
-    document.write(Table="Table of:" +num1)
+    const Result=i*num1;
+    console.log("Table of 3 ="+Result);
 }
