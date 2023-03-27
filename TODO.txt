@@ -1,6 +1,6 @@
 TO DO :
 
-1. learn about JS fallback  in switch case 
+1. learn about JS fall through  in switch case 
 2. write a program to print a coat msg according to selected day  
         mon, tue :=> "Life is all about next step" , wed,thu,fri :=> "hardwork is key of success" , sat,sun :=>  "no msg  only chill"
 3. learn about loop , what is loop , why we use loop, how to implement loop in javascript 
