@@ -7,6 +7,6 @@ TO DO :
 4. print table of 3 using loop 
 5. print all even 1 to 20 using loop 
 6. write a program to print a start(*) pattern 
-7. writ a inffinite loop 
-8 what is breack and continou in loop 
+7. write a inffinite loop 
+8 what is breack and continue in loop 
 9 write a program by using for loop , breack and continue
