@@ -73,8 +73,8 @@ for (let i = 0; i<10;i++){
 row=5
 colum = 5
 for(row=0;row<5;row++){
-    for(colum=4;colum>=0;colum--){
-        if (colum<=row)
+    for(colum=0;colum<5;colum++){
+        if (colum>=row)
             process.stdout.write("*")
         else
             process.stdout.write(" ")
