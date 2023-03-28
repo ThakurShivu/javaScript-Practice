@@ -81,3 +81,27 @@ for(row=0;row<5;row++){
     }
     console.log()
 }
+
+
+//write a program to print a pattern
+for(row=0;row<5;row++){
+    let askiValue = 0
+    for(colum=4;colum>=0;colum--){
+        if (colum >= row){
+            process.stdout.write(String.fromCharCode(askiValue+65))
+            askiValue++
+        }else{
+            process.stdout.write(" ")
+        }   
+    }
+    console.log()
+}
+
+//reverse set 
+
+let str = "SHIVANI"
+for(let i=0;i<str.length;i++){
+    console.log(str[i])
+}
+
+//write a program to print a pattern of Shivani
