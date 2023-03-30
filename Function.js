@@ -17,7 +17,7 @@ const SATURDAY = "Saturday"
 
 
 function BreakfastMenuByDay(TODAY) {
-    let menu 
+    let menu
     if (TODAY == SUNDAY) {
         menu = SUNDAY_MENU
     } else if (TODAY == MONDAY) {
@@ -25,11 +25,11 @@ function BreakfastMenuByDay(TODAY) {
     } else if (TODAY == TUESDAY) {
         menu = TUESDAY_MENU
     } else if (TODAY == WEDNESDAY) {
-        menu =WNDESDAY_MENU
+        menu = WNDESDAY_MENU
     } else if (TODAY == THURSDAY) {
-        menu =THURSDAY_MENU 
+        menu = THURSDAY_MENU
     } else if (TODAY == FRIDAY) {
-        menu =FRIDAY_MENU
+        menu = FRIDAY_MENU
     } else {
         menu = SATERDAY_MENU
     }
@@ -44,33 +44,56 @@ console.log(BreakfastMenuByDay(MONDAY))
 //write a function to return reminder of a/b = mod 
 
 //write a function to return additon of two numbers  => add
-function add(num1 , num2){
-    return  num1 + num2
+function add(num1, num2) {
+    return num1 + num2
 }
-console.log(add(4,5))
+console.log(add(4, 5))
 
 
 //write a function to return subtract of two numbers => sub
-function sub(num1 ,num2){
+function sub(num1, num2) {
     return num1 - num2
 }
-console.log(sub(3,2))
+console.log(sub(3, 2))
 
 //write a function to return subtract of two numbers => mult
-function mult(num1,num2){
-    return num1*num2
+function mult(num1, num2) {
+    return num1 * num2
 }
-console.log(mult(7,8))
+console.log(mult(7, 8))
 
 
 //write a function to return subtract of two numbers => div
-function div(num1 ,num2){
-    return num1/num2
+function div(num1, num2) {
+    return num1 / num2
 }
-console.log(div(9,5))
+console.log(div(9, 5))
 
 //write a function to return subtract of two numbers => mod
-function mod(num1,num2){
-    return num1%num2
+function mod(num1, num2) {
+    return num1 % num2
 }
-console.log(mod(5,7))
+console.log(mod(5, 7))
+
+//make a calculater using call by function in javascript
+
+function calculate(ope, num1, num2) {
+    let res
+
+    if (ope == "+"){
+        res = num1 + num2
+    } else if (ope == "-") {
+        res = num1 - num2
+    } else if (ope == "*") {
+        res = num1 * num2
+    } else if (ope == "/") {
+        res = num1 / num2
+    } else if (ope == "%") {
+        res = num1 % num2
+    } else {
+        res = "please give me input"
+    }
+    return `operand is: ${ope} and result is: ${res}`
+}
+console.log(calculate("*", 7, 5))
+
