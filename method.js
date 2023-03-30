@@ -1,5 +1,8 @@
-greet = function greeting(userName){
-    console.log("Welcome ",userName)
+
+const greet = {
+    greeting() {
+        return `Welcome Shivani`
+    }
 }
 
-module.exports.greeeting =  greet
+console.log(greet.greeting())
