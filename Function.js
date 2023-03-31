@@ -80,7 +80,7 @@ console.log(mod(5, 7))
 function calculate(ope, num1, num2) {
     let res
 
-    if (ope == "+"){
+    if (ope == "+") {
         res = num1 + num2
     } else if (ope == "-") {
         res = num1 - num2
@@ -97,3 +97,45 @@ function calculate(ope, num1, num2) {
 }
 console.log(calculate("*", 7, 5))
 
+// make a calculator using switch
+
+function calculator(ope ,num1,num2){
+let res
+switch (ope) {
+    case "+" :
+        res = num1 + num2
+        break;
+    case "-" :
+        res = num1 - num2
+        break;
+    case "*":
+        res = num1 * num2
+        break;
+    case "/":
+        res = num1 / num2
+        break;
+    case "%":
+        res =num1 % num2
+        break;
+    default:
+        res = "error"
+}
+return `operand is: ${ope} and result is: ${res}`
+}
+
+console.log(calculator("+", 9,8 ))
+
+
+//write a function for check the eligibility for a vote.
+
+
+function IsEligibleForAVote(age){
+    let output
+ if (age>=18){
+    output="Eligible for a vote"
+ } else{
+    output="Not eligible for a vote"
+ } 
+ return`Result is:${output}` 
+}
+console.log(IsEligibleForAVote(18))
