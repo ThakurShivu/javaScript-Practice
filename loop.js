@@ -101,7 +101,8 @@ for(row=0;row<5;row++){
 
 let str = "SHIVANI"
 for(let i=0;i<str.length;i++){
+    }
     console.log(str[i])
-}
+
 
 //write a program to print a pattern of Shivani

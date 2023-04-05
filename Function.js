@@ -139,3 +139,49 @@ function IsEligibleForAVote(age){
  return`Result is:${output}` 
 }
 console.log(IsEligibleForAVote(18))
+
+// NOTE: we can also store a function in variable and call that function using that variable name 
+
+//let's assign Print funtion in printer variable 
+var printer = function Print(Name){
+    console.log("Hello :",Name)
+}
+
+// now call Print function by calling printer variable 
+
+printer("Vimal Shah")
+
+// as we seen in above example we can store a function , we can avoid function Name because we are not calling function  by it's name 
+var Player = function (GameName){ //anonumous function
+    console.log("Oho! you are playing : ", GameName," game")
+}
+Player("God of War")
+
+// so above example shows we can avoid unneccessary name which we are not using 
+// as we know () means function so  can also remove 'function' key word
+VoteEligibilityCheck1 = (age)=>{   //arrow function
+    let vv = "VV"
+    if (age >= 18) {
+        console.log("WOW ! you are eligible for vote")
+    }else {
+        console.log("Oops ! you can't vote")
+    }
+    func = ()=>{ //closer fuction 
+        console.log("I am inside an anonuomous function")
+        console.log(vv)
+    }
+    func()
+}
+VoteEligibilityCheck2 = (age)=>{   //arrow function
+    if (age >= 21) {
+        console.log("WOW ! you are eligible for vote")
+    }else {
+        console.log("Oops ! you can't vote")
+    }
+}
+
+// we can also pass a function inside a function 
+check = (eligibilityCheckMethod,age)=>{ // example of first class function
+    eligibilityCheckMethod(age)
+}
+check(VoteEligibilityCheck1,18)
