@@ -99,52 +99,52 @@ console.log(calculate("*", 7, 5))
 
 // make a calculator using switch
 
-function calculator(ope ,num1,num2){
-let res
-switch (ope) {
-    case "+" :
-        res = num1 + num2
-        break;
-    case "-" :
-        res = num1 - num2
-        break;
-    case "*":
-        res = num1 * num2
-        break;
-    case "/":
-        res = num1 / num2
-        break;
-    case "%":
-        res =num1 % num2
-        break;
-    default:
-        res = "error"
-}
-return `operand is: ${ope} and result is: ${res}`
+function calculator(ope, num1, num2) {
+    let res
+    switch (ope) {
+        case "+":
+            res = num1 + num2
+            break;
+        case "-":
+            res = num1 - num2
+            break;
+        case "*":
+            res = num1 * num2
+            break;
+        case "/":
+            res = num1 / num2
+            break;
+        case "%":
+            res = num1 % num2
+            break;
+        default:
+            res = "error"
+    }
+    return `operand is: ${ope} and result is: ${res}`
 }
 
-console.log(calculator("+", 9,8 ))
+console.log(calculator("+", 9, 8))
 
 
 //write a function for check the eligibility for a vote.
 
 
-function IsEligibleForAVote(age){
+function IsEligibleForAVote(age) {
     let output
- if (age>=18){
-    output="Eligible for a vote"
- } else{
-    output="Not eligible for a vote"
- } 
- return`Result is:${output}` 
+    if (age >= 18) {
+        output = "Eligible for a vote"
+    } else {
+        output = "Not eligible for a vote"
+    }
+    return `Result is:${output}`
 }
 console.log(IsEligibleForAVote(18))
 
 // NOTE: we can also store a function in variable and call that function using that variable name 
 
 //let's assign Print funtion in printer variable 
-var printer = function Print(Name){
-    console.log("Hello :",Name)
+var printer = function Print(Name) {
+    console.log("Hello :", Name)
 }
 
 // now call Print function by calling printer variable 
@@ -152,36 +152,52 @@ var printer = function Print(Name){
 printer("Vimal Shah")
 
 // as we seen in above example we can store a function , we can avoid function Name because we are not calling function  by it's name 
-var Player = function (GameName){ //anonumous function
-    console.log("Oho! you are playing : ", GameName," game")
+var Player = function (GameName) { //anonumous function
+    console.log("Oho! you are playing : ", GameName, " game")
 }
 Player("God of War")
 
 // so above example shows we can avoid unneccessary name which we are not using 
 // as we know () means function so  can also remove 'function' key word
-VoteEligibilityCheck1 = (age)=>{   //arrow function
+VoteEligibilityCheck1 = (age) => {   //arrow function
     let vv = "VV"
     if (age >= 18) {
         console.log("WOW ! you are eligible for vote")
-    }else {
+    } else {
         console.log("Oops ! you can't vote")
     }
-    func = ()=>{ //closer fuction 
+    func = () => { //closer fuction 
         console.log("I am inside an anonuomous function")
         console.log(vv)
     }
     func()
 }
-VoteEligibilityCheck2 = (age)=>{   //arrow function
+VoteEligibilityCheck2 = (age) => {   //arrow function
     if (age >= 21) {
         console.log("WOW ! you are eligible for vote")
-    }else {
+    } else {
         console.log("Oops ! you can't vote")
     }
 }
 
 // we can also pass a function inside a function 
-check = (eligibilityCheckMethod,age)=>{ // example of first class function
+check = (eligibilityCheckMethod, age) => { // example of first class function
     eligibilityCheckMethod(age)
 }
-check(VoteEligibilityCheck1,18)
+check(VoteEligibilityCheck1, 18)
+
+// write a javascript program to get the current date.
+
+current = (sp) => {
+    today = new Date()
+    let dd = today.getDate()
+    let mm = today.getMonth() + 1
+    let yyyy = today.getFullYear()
+
+    if (dd < 10) dd = '0' + dd
+    if (mm < 10) mm = '0' + mm
+    return (mm + sp + dd + sp + yyyy)
+
+}
+console.log(current('/'))
+console.log(current('-'))
